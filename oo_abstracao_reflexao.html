@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ES6</title>
+
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+
+		<script type="text/babel"> 
+
+			//Um software de marcenaria
+			//cadeira e sofá
+
+			//paradigma procedural
+
+			//cadeira
+			/*
+			let qntPernas = 4
+			let giratoria = false
+			let cor = 'azul'
+
+			//Array de cadeiras
+			let cadeiras = []
+
+			cadeiras[0] = []
+			cadeiras[0]['qntPernas'] = 4
+			cadeiras[0]['giratoria'] = false
+			cadeiras[0]['cor'] = 'azul'
+
+			cadeiras[1] = []
+			cadeiras[1]['qntPernas'] = 1
+			cadeiras[1]['giratoria'] = true
+			cadeiras[1]['cor'] = 'vermelha'
+
+			function girarCadeira(indice) {
+				if (cadeiras[indice]['giratoria'] === true) {
+					console.log('Girou')
+				}
+				else{
+					console.log('A cadeira não é giratória')
+				}
+			}
+
+			function adicionarCadeira(qntdPernas, giratoria, cor) {
+				let cadeira = []
+
+				cadeira['qntPernas'] = qntdPernas
+				cadeira['giratoria'] = giratoria
+				cadeira['cor'] = cor
+
+				cadeiras.push(cadeira)
+			}
+
+			adicionarCadeira(3, false, 'verde')
+
+			console.log(cadeiras)
+
+			//girarCadeira(1)
+			*/
+
+			//Paradigma de OO
+			class Cadeira{
+				constructor(qntPernas, giratoria, cor) {
+					this.qntPernas = qntPernas
+					this.giratoria = giratoria
+					this.cor = cor
+				}
+
+				girarCadeira(){
+					if (this.giratoria === true) {
+						console.log('Girou')
+					}
+					else{
+						console.log('A cadeira não é giratória')
+					}
+				}
+			}
+
+			let cadeiras = []
+			cadeiras.push(new Cadeira(4, false, 'azul'))
+			cadeiras.push(new Cadeira(1, true, 'vermelha'))
+
+			console.log(cadeiras)
+			cadeiras[0].girarCadeira()
+	
+		</script>
+	</head>
+
+	<body>
+	</body>
+</html>
