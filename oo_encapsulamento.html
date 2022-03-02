@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ES6</title>
+
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+
+		<script type="text/babel"> 
+
+			//Não existem os operadores de visibilidade no JS, portanto usa-se uma convenção para indicar
+			// quando um atributo é privado, usa-se "_"(underline) na definição do atributo para fazer
+			//essa indicação 
+			class Tv{
+				constructor(){
+					this._relacaoCanais = [2, 4, 5, 7, 10] //apenas indica para o programador não usar, mas não muda nada de fato
+					this._canalAtivo = 5
+					this._volume = 5
+				}
+
+				//getters and setters
+				get canalAtivo(){
+					return this._canalAtivo
+				}
+				set canalAtivo(canalAtivo){
+					let x = this._relacaoCanais.indexOf(canalAtivo)
+					if (x === -1) {
+
+					}
+					else{
+						this._canalAtivo = canalAtivo
+					}
+				}
+
+			}
+
+			let tv = new Tv()
+
+			tv.canalAtivo = 7
+			console.log(tv.canalAtivo)
+	
+		</script>
+	</head>
+
+	<body>
+	</body>
+</html>
