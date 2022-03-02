@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ES6</title>
+
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+
+		<script type="text/babel"> 
+
+			// let quadrado = function (x = 5) {
+			// 	return x * x
+			// }
+
+			//Aqui está a arrow function (por conta do "=>")
+			// let quadrado = (x) => {
+			// 	return x * x
+			// }
+
+			//Caso apenas um parâmetro que será usado na função, não precisa do "()"
+			// let quadrado = x => {
+			// 	return x * x
+			// }
+
+			//let quadrado = x => x * x //return implícito
+
+			//document.write( quadrado(3) )
+
+			// let parOuImpar = function(numero = 2){
+			// 	if (numero % 2 === 0) {
+			// 		return	'par'
+			// 	}
+			// 	else{
+			// 		return 'ímpar'
+			// 	}
+			// }
+
+
+			//Mas podemos diminuir ainda mais usando o if ternário
+			// let parOuImpar = numero => {
+			// 	if (numero % 2 === 0) {
+			// 		return	'par'
+			// 	}
+			// 	else{
+			// 		return 'ímpar'
+			// 	}
+			// }
+
+			let parOuImpar = numero => numero % 2 === 0 ? 'par' : 'ímpar' //usando o retorno implícito
+
+			document.write( parOuImpar(556) )
+	
+		</script>
+	</head>
+
+	<body>
+	</body>
+</html>
