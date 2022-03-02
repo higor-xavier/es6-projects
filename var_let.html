@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Babel - ES6</title>
+
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+
+		<script type="text/babel"> //adicionar  quando acabar
+
+			//3 Escopos: global, função e bloco
+			//o uso de let na criação de variável faz com que o escopo dela seja mantido onde foi criado
+			//mas com o uso de var, ocorre o hoisting, a elevação para outro escopo onde será chamada
+
+			if (true) {
+				let serie = 'Balck ish'
+			}
+			console.log(serie)
+			
+		</script>
+	</head>
+
+	<body>
+		<div id="output"></div>
+	</body>
+</html>
