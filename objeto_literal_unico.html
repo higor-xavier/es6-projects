@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ES6</title>
+
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script type="text/javascript">
+			
+		let assinatura = {
+			idCliente: 1000,
+			descricao: 'Acesso a internet',
+			status(){
+				console.log('Ativo')
+			}
+		}
+
+		console.log(assinatura.descricao)
+
+		let y = assinatura
+
+		console.log(y.descricao)
+
+		y.idCliente = 1001
+
+		console.log(assinatura.idCliente)
+		console.log(y.idCliente)
+
+		//Apesar de serem variáveis diferentes, elas apontam para o mesmo endereço
+		//ou seja, y e assinatura tem o mesmo endereço para o objeto literal
+
+		</script>
+	</head>
+
+	<body>
+
+
+
+	</body>
+</html>
