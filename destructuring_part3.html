@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ES6</title>
+
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script type="text/babel">
+			
+			//array
+			/*
+			let arr = [10, 20, 30, 40]
+
+			function teste([a, b, , c, d = 100]) {
+				console.log(a, b, c, d)
+			}
+
+			teste(arr)
+			*/
+
+			//objeto
+			let obj = {
+				a: 10,
+				b: 20,
+				c: 30,
+				d: 40
+			}
+
+			function test({a, b, z = 10}) {
+				console.log(a, b, z)
+			}
+
+			test(obj)
+
+		</script>
+	</head>
+
+	<body>
+
+
+
+	</body>
+</html>
